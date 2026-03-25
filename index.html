@@ -1,1 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sport Support | Athletic Aid & Assistance for Youth</title>
+  <meta name="description" content="Sport Support is a Dallas-based nonprofit providing athletic aid and assistance to youth in need through community events, fundraising, and direct support." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#0F4C81',
+            brandBlueDark: '#0A3458',
+            brandOrange: '#F28C28',
+            brandOrangeSoft: '#FDBA74',
+            cream: '#FFF9F2'
+          },
+          boxShadow: {
+            soft: '0 20px 45px rgba(15, 76, 129, 0.12)'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .hero-gradient {
+      background:
+        radial-gradient(circle at top left, rgba(242, 140, 40, 0.20), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(15, 76, 129, 0.18), transparent 32%),
+        linear-gradient(135deg, #f8fbff 0%, #fff7ef 100%);
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-brandBlue text-lg font-extrabold text-white shadow-soft">
+          SS
+        </div>
+        <div>
+          <p class="text-lg font-extrabold tracking-tight text-brandBlue">Sport Support</p>
+          <p class="text-xs font-medium text-slate-500">Dallas, TX Nonprofit</p>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-8 md:flex">
+        <a href="#about" class="text-sm font-semibold text-slate-700 transition hover:text-brandBlue">About</a>
+        <a href="#events" class="text-sm font-semibold text-slate-700 transition hover:text-brandBlue">5K Events</a>
+        <a href="#assistance" class="text-sm font-semibold text-slate-700 transition hover:text-brandBlue">Apply for Assistance</a>
+        <a href="#contact" class="text-sm font-semibold text-slate-700 transition hover:text-brandBlue">Contact</a>
+      </nav>
+
+      <div class="hidden items-center gap-3 md:flex">
+        <a href="#contact" class="rounded-full border border-brandBlue/20 px-5 py-2.5 text-sm font-semibold text-brandBlue transition hover:border-brandBlue hover:bg-brandBlue hover:text-white">Get in Touch</a>
+        <a href="#donate" class="rounded-full bg-brandOrange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-orange-200 transition hover:-translate-y-0.5 hover:bg-orange-500">Donate Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero-gradient relative overflow-hidden">
+    <div class="mx-auto grid max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
+      <div>
+        <span class="inline-flex rounded-full border border-brandOrange/30 bg-white/80 px-4 py-1.5 text-sm font700 text-brandOrange shadow-sm">Helping Youth Stay in the Game</span>
+        <h1 class="mt-6 max-w-2xl text-4xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
+          Athletic aid and assistance for <span class="text-brandBlue">youth in need</span>.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+          Sport Support is a Dallas-based nonprofit dedicated to helping young athletes access the resources, opportunities, and support they need to participate, grow, and thrive.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#donate" class="rounded-full bg-brandBlue px-6 py-3.5 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-brandBlueDark">Donate Now</a>
+          <a href="#assistance" class="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 transition hover:border-brandOrange hover:text-brandOrange">Apply for Assistance</a>
+        </div>
+
+        <div class="mt-10 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3">
+          <div class="rounded-2xl bg-white p-5 shadow-soft ring-1 ring-slate-100">
+            <p class="text-2xl font-extrabold text-brandBlue">Dallas</p>
+            <p class="mt-1 text-sm text-slate-500">Based in Dallas, Texas</p>
+          </div>
+          <div class="rounded-2xl bg-white p-5 shadow-soft ring-1 ring-slate-100">
+            <p class="text-2xl font-extrabold text-brandOrange">5K</p>
+            <p class="mt-1 text-sm text-slate-500">Community fundraising events</p>
+          </div>
+          <div class="rounded-2xl bg-white p-5 shadow-soft ring-1 ring-slate-100">
+            <p class="text-2xl font-extrabold text-brandBlue">Youth</p>
+            <p class="mt-1 text-sm text-slate-500">Support for athletes in need</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="rounded-[2rem] border border-white/60 bg-white/85 p-6 shadow-soft backdrop-blur">
+          <div class="grid gap-5">
+            <div class="rounded-3xl bg-brandBlue p-6 text-white">
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-white/75">Our Mission</p>
+              <p class="mt-3 text-2xl font-bold leading-snug">
+                Removing financial barriers so more young people can participate in sports.
+              </p>
+            </div>
+
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                <p class="text-sm font-semibold text-brandOrange">What We Support</p>
+                <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-600">
+                  <li>• Registration fees</li>
+                  <li>• Equipment and gear</li>
+                  <li>• Travel assistance</li>
+                  <li>• Program access</li>
+                </ul>
+              </div>
+              <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                <p class="text-sm font-semibold text-brandBlue">How We Raise Funds</p>
+                <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-600">
+                  <li>• Local 5K events</li>
+                  <li>• Community donations</li>
+                  <li>• Sponsorship opportunities</li>
+                  <li>• Volunteer support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute -bottom-5 -left-5 h-24 w-24 rounded-full bg-brandOrange/20 blur-2xl"></div>
+        <div class="absolute -right-6 top-10 h-24 w-24 rounded-full bg-brandBlue/20 blur-2xl"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-[0.2em] text-brandOrange">About Sport Support</p>
+        <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+          Building opportunity through athletics.
+        </h2>
+        <p class="mt-6 text-base leading-8 text-slate-600">
+          Sport Support exists to make sports more accessible for youth who may not otherwise have the financial means to participate. We believe athletics can teach discipline, confidence, teamwork, and resilience — and every child deserves the chance to benefit from those experiences.
+        </p>
+        <p class="mt-4 text-base leading-8 text-slate-600">
+          Based in Dallas, TX, we work to connect community generosity with real, practical support for young athletes and their families. Through fundraising events like local 5Ks, donor contributions, and community partnerships, we help cover athletic-related expenses for youth in need.
+        </p>
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-2">
+        <div class="rounded-3xl bg-slate-50 p-7 ring-1 ring-slate-200">
+          <div class="mb-4 inline-flex rounded-2xl bg-brandBlue/10 px-3 py-2 text-sm font-semibold text-brandBlue">Our Vision</div>
+          <p class="text-sm leading-7 text-slate-600">
+            A community where every child has a fair opportunity to play, compete, and grow through sports.
+          </p>
+        </div>
+        <div class="rounded-3xl bg-slate-50 p-7 ring-1 ring-slate-200">
+          <div class="mb-4 inline-flex rounded-2xl bg-brandOrange/10 px-3 py-2 text-sm font-semibold text-brandOrange">Our Focus</div>
+          <p class="text-sm leading-7 text-slate-600">
+            Direct support for youth athletic participation, with a focus on accessibility, encouragement, and local impact.
+          </p>
+        </div>
+        <div class="rounded-3xl bg-slate-50 p-7 ring-1 ring-slate-200 sm:col-span-2">
+          <div class="mb-4 inline-flex rounded-2xl bg-brandBlue/10 px-3 py-2 text-sm font-semibold text-brandBlue">Community Impact</div>
+          <p class="text-sm leading-7 text-slate-600">
+            Every donation and every event entry helps create more opportunities for youth in need to join teams, stay active, and feel supported in their athletic journey.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="text-sm font-bold uppercase tracking-[0.2em] text-brandOrange">Community Events</p>
+        <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">We host local 5Ks to support youth athletics.</h2>
+        <p class="mt-5 text-base leading-8 text-slate-600">
+          Our 5K events bring the community together around a shared purpose: helping young athletes get the support they need. These events are a great way to participate, donate, volunteer, and spread awareness.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-3">
+        <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-100">
+          <p class="text-sm font-semibold text-brandBlue">Run for a Cause</p>
+          <h3 class="mt-3 text-xl font-bold text-slate-900">Annual Sport Support 5K</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">
+            Join our signature community run and help raise funds for athletic aid, equipment, and youth participation support.
+          </p>
+        </div>
+        <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-100">
+          <p class="text-sm font-semibold text-brandOrange">Volunteer</p>
+          <h3 class="mt-3 text-xl font-bold text-slate-900">Get Involved Locally</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">
+            Help with race-day setup, registration, outreach, or sponsorship coordination and make a direct impact in Dallas.
+          </p>
+        </div>
+        <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-100">
+          <p class="text-sm font-semibold text-brandBlue">Sponsor</p>
+          <h3 class="mt-3 text-xl font-bold text-slate-900">Partner With Us</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">
+            Businesses and community partners can sponsor events and help expand access to sports for more young people.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply for Assistance -->
+  <section id="assistance" class="py-20">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-brandOrange">Apply for Assistance</p>
+          <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">Need help with youth athletic expenses?</h2>
+          <p class="mt-5 max-w-2xl text-base leading-8 text-slate-600">
+            Families can apply for assistance for eligible athletic-related needs such as registration fees, gear, equipment, or other participation costs. We review applications with care and aim to support youth who would benefit most from the opportunity to stay involved in sports.
+          </p>
+        </div>
+
+        <div class="rounded-[2rem] border border-brandBlue/10 bg-gradient-to-br from-brandBlue to-brandBlueDark p-8 text-white shadow-soft">
+          <h3 class="text-2xl font-bold">Apply Today</h3>
+          <p class="mt-3 text-sm leading-7 text-white/80">
+            Ready to request support? Use the application button below to start the process.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-4">
+            <a href="#contact" class="rounded-full bg-brandOrange px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-500">Apply for Assistance</a>
+            <a href="#contact" class="rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-brandBlue">Ask a Question</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate -->
+  <section id="donate" class="bg-cream py-20">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="rounded-[2rem] border border-brandOrange/15 bg-white p-10 shadow-soft lg:p-12">
+        <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-brandOrange">Support the Mission</p>
+            <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">Your donation helps keep kids in the game.</h2>
+            <p class="mt-5 max-w-2xl text-base leading-8 text-slate-600">
+              Donations help fund athletic opportunities for youth in need, including registration fees, equipment, program access, and other critical support. Every contribution helps create access, confidence, and opportunity.
+            </p>
+          </div>
+
+          <div class="rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200">
+            <p class="text-sm font-semibold text-brandBlue">Make a Contribution</p>
+            <p class="mt-3 text-sm leading-7 text-slate-600">
+              Add your donation link, donor platform, or payment processor here.
+            </p>
+            <a href="#" class="mt-6 inline-flex rounded-full bg-brandOrange px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-500">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-brandOrange">Get in Touch</p>
+          <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">We would love to hear from you.</h2>
+          <p class="mt-5 text-base leading-8 text-slate-600">
+            Whether you want to donate, volunteer, sponsor an event, or apply for assistance, Sport Support is here to connect with you.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+              <p class="text-sm font-semibold text-brandBlue">Location</p>
+              <p class="mt-1 text-sm text-slate-600">Dallas, TX</p>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+              <p class="text-sm font-semibold text-brandBlue">Email</p>
+              <p class="mt-1 text-sm text-slate-600">info@sportsupport.org</p>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+              <p class="text-sm font-semibold text-brandBlue">Phone</p>
+              <p class="mt-1 text-sm text-slate-600">(214) 555-0123</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
+          <form class="grid gap-5">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label class="mb-2 block text-sm font-semibold text-slate-700">First Name</label>
+                <input type="text" placeholder="Your first name" class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/10" />
+              </div>
+              <div>
+                <label class="mb-2 block text-sm font-semibold text-slate-700">Last Name</label>
+                <input type="text" placeholder="Your last name" class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/10" />
+              </div>
+            </div>
+
+            <div>
+              <label class="mb-2 block text-sm font-semibold text-slate-700">Email</label>
+              <input type="email" placeholder="you@example.com" class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/10" />
+            </div>
+
+            <div>
+              <label class="mb-2 block text-sm font-semibold text-slate-700">How can we help?</label>
+              <select class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/10">
+                <option>General Inquiry</option>
+                <option>Donate</option>
+                <option>Volunteer</option>
+                <option>Sponsorship</option>
+                <option>Apply for Assistance</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="mb-2 block text-sm font-semibold text-slate-700">Message</label>
+              <textarea rows="5" placeholder="Write your message here..." class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/10"></textarea>
+            </div>
+
+            <button type="submit" class="inline-flex w-fit rounded-full bg-brandBlue px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brandBlueDark">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-slate-950 py-10 text-slate-300">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div>
+        <p class="text-lg font-extrabold text-white">Sport Support</p>
+        <p class="mt-1 text-sm text-slate-400">Athletic aid and assistance to youth in need.</p>
+      </div>
+      <div class="flex flex-wrap gap-5 text-sm text-slate-400">
+        <a href="#about" class="transition hover:text-white">About</a>
+        <a href="#events" class="transition hover:text-white">5K Events</a>
+        <a href="#assistance" class="transition hover:text-white">Apply for Assistance</a>
+        <a href="#donate" class="transition hover:text-white">Donate</a>
+        <a href="#contact" class="transition hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
 
